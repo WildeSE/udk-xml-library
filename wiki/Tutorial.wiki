@@ -2,7 +2,7 @@
 
 = Usage Example = 
 
-
+{{{
 exec function TestXML()
 {
    local PlayerController PC;
@@ -24,3 +24,4 @@ exec function TestXML()
       PC.ClientMessage("name attribute: "$xmlTest.getAttributeByName(dogNode, "age"));
    }
 }
+}}}
