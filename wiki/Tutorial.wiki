@@ -1,0 +1,26 @@
+#summary A brief tutorial on using the library.
+
+= Usage Example = 
+
+
+exec function TestXML()
+{
+   local PlayerController PC;
+   local XmlParser xmlTest;
+   local string testNode;
+   local string dogNode;
+   local string rootNode;
+   xmlTest = new class'UTGame.XmlParser';
+   rootNode = xmlTest.initXML("root");
+   xmlTest.loadXMLString("<test><dog age='23'>bannana</dog><cat>apple</cat></test>");
+   testNode = xmlTest.firstChild(rootNode, "testNode");
+   dogNode = xmlTest.firstChild(testNode, "dogNode");
+   
+   foreach WorldInfo.AllControllers(class'PlayerController', PC)
+   {
+      PC.ClientMessage("ROOT: "$rootNode);
+      PC.ClientMessage("NODE: "$testNode);
+      PC.ClientMessage("innerText: "$xmlTest.innerText(dogNode));
+      PC.ClientMessage("name attribute: "$xmlTest.getAttributeByName(dogNode, "age"));
+   }
+}
