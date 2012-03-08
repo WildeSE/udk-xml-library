@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdkXmlParser", "UdkXmlParser\UdkXmlParser.csproj", "{9EFD4005-D20B-456D-B7ED-71921EE4C9CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EFD4005-D20B-456D-B7ED-71921EE4C9CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EFD4005-D20B-456D-B7ED-71921EE4C9CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EFD4005-D20B-456D-B7ED-71921EE4C9CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EFD4005-D20B-456D-B7ED-71921EE4C9CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
