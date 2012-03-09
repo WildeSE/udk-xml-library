@@ -25,3 +25,34 @@ exec function TestXML()
    }
 }
 }}}
+
+= Working with files = 
+{{{
+exec function TestXML()
+{
+   local PlayerController PC;
+   local XmlParser xmlTest;
+   local string xmlFilePath;
+   local string dialogsNode;
+   local string dialogNode;
+   local string documentNode;
+   local string textNode;
+   local int childIdx;
+   xmlTest = new class'UTGame.XmlParser';
+   documentNode = xmlTest.initXML("document");
+   xmlFilePath = xmlTest.getLocalFilePath("test.xml");
+   xmlTest.loadXML(xmlFilePath);
+   dialogsNode = xmlTest.firstChild(documentNode, "dialogsNode");
+   
+   foreach WorldInfo.AllControllers(class'PlayerController', PC)
+   {
+      for(childIdx=0; childIdx < xmlTest.childCount(dialogsNode); childIdx++)
+      {
+        dialogNode = xmlTest.getChildAtIdx("dialogsNode",childIdx,"dialogNode");
+        textNode = xmlTest.firstChild(dialogNode, "textNode");
+        PC.ClientMessage("Dialog");
+        PC.ClientMessage("Text: "$xmlTest.innerText(textNode));
+      }
+   }
+}
+}}}
