@@ -57,13 +57,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Cecil">
-      <HintPath>..\..\..\..\..\Desktop\DllExport\Mono.Cecil.dll</HintPath>
+      <HintPath>DllExport\Mono.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="RGiesecke.DllExport">
-      <HintPath>..\..\..\..\..\Desktop\DllExport\RGiesecke.DllExport.dll</HintPath>
+      <HintPath>DllExport\RGiesecke.DllExport.dll</HintPath>
     </Reference>
     <Reference Include="RGiesecke.DllExport.MSBuild">
-      <HintPath>..\..\..\..\..\Desktop\DllExport\RGiesecke.DllExport.MSBuild.dll</HintPath>
+      <HintPath>DllExport\RGiesecke.DllExport.MSBuild.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
