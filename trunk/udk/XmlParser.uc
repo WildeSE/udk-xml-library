@@ -2,6 +2,7 @@ class XmlParser extends Object
        DLLBind(UdkXmlParser);
 
 dllimport final function string initXML(string documentNodeName);
+dllimport final function string getLocalFilePath(string fileName);
 dllimport final function bool loadXML(string fileName);
 dllimport final function bool loadXMLString(string xmlString);
 dllimport final function string firstChild(string targetNodeName, string resultNodeName);
