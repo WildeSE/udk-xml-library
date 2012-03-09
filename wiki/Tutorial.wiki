@@ -56,3 +56,20 @@ exec function TestXML()
    }
 }
 }}}
+
+Contents of test.xml
+
+{{{
+<dialogs>
+    <dialog>
+        <text>Hello, how are you today?</text>
+        <name>Donald</name>
+    </dialog>
+    <dialog>
+        <text>I am fine.</text>
+        <name>Alien</name>
+    </dialog>
+</dialogs>
+}}}
+
+http://i16.photobucket.com/albums/b48/shadowisadog/testxml.jpg
